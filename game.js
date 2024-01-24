@@ -88,3 +88,11 @@ $(document).keypress(function () {
     gameStarted = true;
   }
 });
+
+$('#' + 'clickMe').click(function () {
+  if (!gameStarted) {
+    $("body").removeClass("game-over");
+    nextSequence();
+    gameStarted = true;
+  }
+});
